@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banking Page</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/style.css">
     <!-- Tailwind style -->
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-purple-100">
     <header>
         <h1 class="text-5xl mt-8 text-center">Let's ger some<span class="font-semibold text-purple-600 "> mony</span>!!!</h1>
     </header>
@@ -16,15 +18,15 @@
         <!-- Balance and transaction -->
         <SECtion class="mt-12">
             <div class="grid grid-cols-3 gap-4">
-                <div class=" text-purple-700 bg-purple-200 rounded p-8">
+                <div class="mony-div text-purple-700 bg-purple-200 rounded p-8">
                     <h3 class="text-3xl">Deposit</h3>
                     <h4 class="text-5xl">$<span id="deposit-total">00</span></h4>
                 </div>
-                <div class="text-white bg-purple-400 rounded p-8">
+                <div class="mony-div text-white bg-purple-400 rounded p-8">
                     <h3 class="text-3xl">Withdraw</h3>
                     <h4 " class="text-5xl">$<span id="withdraw-total">00</span> </h4>
                 </div>
-                <div class="text-white bg-purple-600 rounded p-8">
+                <div class="mony-div text-white bg-purple-600 rounded p-8">
                     <h3 class="text-3xl">Balance</h3>
                     <h4 class="text-5xl">$<span id="balance-total">1200</span></h4>
                 </div>
@@ -33,18 +35,18 @@
         <!-- deposit and Withdraw -->
         <section class="mt-8">
             <div class="grid grid-cols-2 gap-4">
-                <div class="bg-purple-100 p-8 rounded">
-                    <h3 class="text-2xl">Please Deposit</h3>
+                <div class="bg-purple-100 p-8 rounded mony-div">
+                    <h3 class="text-2xl mb-2">Please Deposit</h3>
                     <div>
-                        <input id="deposit-input" class="border border-purple-600 rounded block w-3/4 p-1 mb-4" type="text" placeholder="$ amount you want to deposit">
-                        <button id="deposit-btn" class="bg-purple-600 p-1 px-3 text-white font-medium rounded ">Deposit</button>
+                        <input id="deposit-input" class="input-style  bg-purple-100 border-purple-600 rounded block w-3/4 p-1 mb-4" type="text" placeholder="$ amount you want to deposit">
+                        <button id="deposit-btn" class="submit-button bg-purple-600 p-1 px-3 text-white font-medium rounded ">Deposit</button>
                     </div>
                 </div>
-                <div class="bg-purple-100 p-8 rounded">
-                    <h3 class="text-2xl">Please Withdraw</h3>
+                <div class="bg-purple-100 p-8 rounded mony-div">
+                    <h3 class="text-2xl mb-2">Please Withdraw</h3>
                     <div>
-                        <input id="withdraw-input" class="border border-purple-600 rounded block w-3/4 p-1 mb-4" type="text" placeholder="$ amount you want to Withdraw">
-                        <button id="withdraw-btn" class="bg-purple-600 p-1 px-3 text-white font-medium rounded ">Withdraw</button>
+                        <input id="withdraw-input" class=" input-style  bg-purple-100  border-purple-600 rounded block w-3/4 p-1 mb-4" type="text" placeholder="$ amount you want to Withdraw">
+                        <button id="withdraw-btn" class="submit-button bg-purple-600 p-1 px-3 text-white font-medium rounded ">Withdraw</button>
                     </div>
                 </div>
             </div>
