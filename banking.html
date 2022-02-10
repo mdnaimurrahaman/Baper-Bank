@@ -5,8 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banking Page</title>
+    <!-- Tailwind style -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Banking side</h1>
+    <header>
+        <h1 class="text-5xl mt-16 text-center">Let's ger some<span class="font-semibold text-purple-600 "> mony</span>!!!</h1>
+    </header>
+    <main class=" w-3/4 mx-auto">
+        <!-- Balance and transaction -->
+        <SECtion class="mt-12">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-purple-200 rounded p-8">
+                    <h3 class="text-3xl">Deposit</h3>
+                    <h4 class="text-5xl">$00</h4>
+                </div>
+                <div class="text-white bg-purple-400 rounded p-8">
+                    <h3 class="text-3xl">Withdraw</h3>
+                    <h4 class="text-5xl">$00</h4>
+                </div>
+                <div class="text-white bg-purple-600 rounded p-8">
+                    <h3 class="text-3xl">Balance</h3>
+                    <h4 class="text-5xl">$1200</h4>
+                </div>
+            </div>
+        </SECtion>
+        <!-- deposit and Withdraw -->
+        <section class="mt-8">
+            <div class="grid grid-cols-2">
+                <div class="bg-purple-100 p-8 rounded">
+                    <h3 class="text-2xl">Please Deposit</h3>
+                    <div>
+                        <input id="deposit-amount" class="border border-purple-600 rounded block w-3/4 p-1 mb-4" type="text" placeholder="$ amount you want to deposit">
+                        <button id="submit-btn" class="bg-purple-600 p-1 px-3 text-white font-medium rounded ">Deposit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
